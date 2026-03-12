@@ -7,20 +7,18 @@ module switches(
     input writeEnable,
     input readEnable,
     input [29:0] memAddress,
-    output reg [31:0] readData = 0, 
-    output reg [15:0] leds // This will be connected to the physical switches in XDC
+    output reg [31:0] readData = 0, // Manual says: "not to be read"
+    output reg [15:0] leds         // This drives the physical LEDs
 );
-    // Lab 8 Logic: Read physical switch status into the system
+
     always @(posedge clk) begin
         if (rst) begin
-            readData <= 32'b0;
+            leds <= 16'b0;
         end
-        else if (readEnable) begin
-            // Pad the 16-bit switch input with 0s to fit the 32-bit bus
-            readData <= {16'b0, leds}; 
-        end
-        else begin
-            readData <= 32'b0;
+        else if (writeEnable) begin
+            // Capture the data from the bus to turn on the lights
+            leds <= writeData[15:0];
         end
     end
+
 endmodule
