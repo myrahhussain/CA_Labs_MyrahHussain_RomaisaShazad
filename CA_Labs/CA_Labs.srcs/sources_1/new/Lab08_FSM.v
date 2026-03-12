@@ -1,8 +1,9 @@
 `timescale 1ns / 1ps
+
 module Lab08_FSM (
     input clk,
     input rst,
-    input start,              // Pushbutton to start the test sequence
+    input start,              // Cleaned pushbutton to start the sequence
     input [31:0] readData,    // Data coming back from the Address Decoder
     output reg [31:0] address,
     output reg [31:0] writeData,
@@ -19,7 +20,7 @@ module Lab08_FSM (
                WRITE_LED      = 3'b100;
 
     reg [2:0] state, next_state;
-    reg [31:0] buffer; // To hold data internally during the move
+    reg [31:0] buffer; // Internal register to hold data during the move
 
     // State Register
     always @(posedge clk or posedge rst) begin
@@ -51,27 +52,27 @@ module Lab08_FSM (
 
         case (state)
             READ_SWITCHES: begin
-                address = 32'd768; // Switch address range
+                address = 32'd768; // Switch range (Address Decoder case 2'b10)
                 readEnable = 1;
             end
             WRITE_DATAMEM: begin
-                address = 32'd10;  // Arbitrary address in Data Memory (0-511)
+                address = 32'd10;  // Slot 10 in RAM (Address Decoder case 2'b00)
                 writeData = buffer;
                 writeEnable = 1;
             end
             READ_DATAMEM: begin
-                address = 32'd10;
+                address = 32'd10;  // Read back from Slot 10
                 readEnable = 1;
             end
             WRITE_LED: begin
-                address = 32'd512; // LED address range
+                address = 32'd512; // LED range (Address Decoder case 2'b01)
                 writeData = buffer;
                 writeEnable = 1;
             end
         endcase
     end
 
-    // Buffer to capture read data
+    // Buffer to capture read data from the system bus
     always @(posedge clk) begin
         if (readEnable) 
             buffer <= readData;

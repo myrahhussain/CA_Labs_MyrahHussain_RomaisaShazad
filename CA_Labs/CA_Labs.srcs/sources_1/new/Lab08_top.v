@@ -1,29 +1,34 @@
 `timescale 1ns / 1ps
 
-`timescale 1ns / 1ps
-
 module Lab08_top (
     input clk,
-    input rst,
-    input start,              // Pushbutton to trigger the FSM sequence
-    input [15:0] switches_in, // Physical FPGA switches
-    output [15:0] leds_out,   // Physical FPGA LEDs
-    output [2:0] state_debug  // Connected to LEDs to see FSM state
+    input rst,                // Map to a pushbutton
+    input start,              // Map to a pushbutton (e.g., btnC)
+    input [15:0] switches_in, // Map to switches [15:0]
+    output [15:0] leds_out,   // Map to LEDs [15:0]
+    output [2:0] state_debug  // Map to 3 specific LEDs to see the state
 );
 
-    // Internal Wires connecting the FSM to the Decoder
+    // Internal Wires for the Bus
     wire [31:0] fsm_addr;
     wire [31:0] fsm_writeData;
     wire [31:0] system_readData;
     wire fsm_readEn;
     wire fsm_writeEn;
+    wire clean_start;
 
-    // 1. Instantiate the FSM (The Controller)
-    // Note: Using your name Lab08_FSM here
+    // 1. Instantiate Debouncer to clean the start button
+    debouncer start_filter (
+        .clk(clk),
+        .pbin(start),
+        .pbout(clean_start)
+    );
+
+    // 2. Instantiate the FSM (The Controller)
     Lab08_FSM controller (
         .clk(clk),
         .rst(rst),
-        .start(start),
+        .start(clean_start),
         .readData(system_readData),
         .address(fsm_addr),
         .writeData(fsm_writeData),
@@ -32,7 +37,7 @@ module Lab08_top (
         .current_state(state_debug)
     );
 
-    // 2. Instantiate the Memory System (The Infrastructure)
+    // 3. Instantiate the Memory System (The Infrastructure)
     AddressDecoderTop memory_system (
         .clk(clk),
         .rst(rst),
