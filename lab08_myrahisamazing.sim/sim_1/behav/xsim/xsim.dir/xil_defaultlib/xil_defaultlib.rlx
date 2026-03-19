@@ -1,0 +1,11 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/IBM/Desktop/lab08_myrahisamazing/lab08_myrahisamazing/lab08_myrahisamazing.sim/sim_1/behav/xsim/glbl.v,1773875031,verilog,,,,glbl,,,,,,,,
+C:/Users/IBM/Desktop/lab08_myrahisamazing/lab08_myrahisamazing/lab08_myrahisamazing.srcs/sim_1/new/MemorySystem_tb.v,1773877829,verilog,,,,MemorySystem_tb,,,,,,,,
+C:/Users/IBM/Desktop/lab08_myrahisamazing/lab08_myrahisamazing/lab08_myrahisamazing.srcs/sources_1/new/AddressDecoder.v,1773877829,verilog,,C:/Users/IBM/Desktop/lab08_myrahisamazing/lab08_myrahisamazing/lab08_myrahisamazing.srcs/sources_1/new/AddressDecoderTop.v,,AddressDecoder,,,,,,,,
+C:/Users/IBM/Desktop/lab08_myrahisamazing/lab08_myrahisamazing/lab08_myrahisamazing.srcs/sources_1/new/AddressDecoderTop.v,1773877829,verilog,,C:/Users/IBM/Desktop/lab08_myrahisamazing/lab08_myrahisamazing/lab08_myrahisamazing.srcs/sources_1/new/DataMemory.v,,AddressDecoderTOP,,,,,,,,
+C:/Users/IBM/Desktop/lab08_myrahisamazing/lab08_myrahisamazing/lab08_myrahisamazing.srcs/sources_1/new/DataMemory.v,1773877829,verilog,,C:/Users/IBM/Desktop/lab08_myrahisamazing/lab08_myrahisamazing/lab08_myrahisamazing.srcs/sources_1/new/leds.v,,DataMemory,,,,,,,,
+C:/Users/IBM/Desktop/lab08_myrahisamazing/lab08_myrahisamazing/lab08_myrahisamazing.srcs/sources_1/new/leds.v,1773875031,verilog,,C:/Users/IBM/Desktop/lab08_myrahisamazing/lab08_myrahisamazing/lab08_myrahisamazing.srcs/sources_1/new/switches.v,,leds,,,,,,,,
+C:/Users/IBM/Desktop/lab08_myrahisamazing/lab08_myrahisamazing/lab08_myrahisamazing.srcs/sources_1/new/switches.v,1773875031,verilog,,C:/Users/IBM/Desktop/lab08_myrahisamazing/lab08_myrahisamazing/lab08_myrahisamazing.srcs/sim_1/new/MemorySystem_tb.v,,switches,,,,,,,,

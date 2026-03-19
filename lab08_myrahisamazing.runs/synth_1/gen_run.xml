@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1773879255">
+  <File Type="PA-TCL" Name="top_lab8.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_lab8_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_lab8_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top_lab8.vds"/>
+  <File Type="RDS-UTIL" Name="top_lab8_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_lab8_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top_lab8.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_lab8_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_lab8_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/AddressDecoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Habib/Sem 4/CA/Downloads/Users/mh10074/CA_Labs/CA_Labs.srcs/sources_1/new/AddressDecoder.v"/>
+        <Attr Name="ImportTime" Val="1773293411"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/AddressDecoderTop.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Habib/Sem 4/CA/Downloads/Users/mh10074/CA_Labs/CA_Labs.srcs/sources_1/new/AddressDecoderTop.v"/>
+        <Attr Name="ImportTime" Val="1773293621"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DataMemory.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Habib/Sem 4/CA/Downloads/Users/mh10074/CA_Labs/CA_Labs.srcs/sources_1/new/DataMemory.v"/>
+        <Attr Name="ImportTime" Val="1773291683"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Habib/Sem 4/CA/Downloads/CA_lab8_Myrah_Romaisa/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs/CA_Labs.srcs/sources_1/new/debouncer.v"/>
+        <Attr Name="ImportTime" Val="1773654492"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/leds.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Habib/Sem 4/CA/Downloads/Users/mh10074/CA_Labs/CA_Labs.srcs/sources_1/new/leds.v"/>
+        <Attr Name="ImportTime" Val="1773293411"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/switches.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Habib/Sem 4/CA/Downloads/Users/mh10074/CA_Labs/CA_Labs.srcs/sources_1/new/switches.v"/>
+        <Attr Name="ImportTime" Val="1773293411"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Lab08_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Habib/Sem 4/CA/Downloads/Users/mh10074/CA_Labs/CA_Labs.srcs/sources_1/new/Lab08_top.v"/>
+        <Attr Name="ImportTime" Val="1773293412"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Lab08_FSM.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="E:/Habib/Sem 4/CA/Downloads/Users/mh10074/CA_Labs/CA_Labs.srcs/sources_1/new/Lab08_FSM.v"/>
+        <Attr Name="ImportTime" Val="1773293443"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_lab8"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constrlab8.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Habib/Sem 4/CA/Downloads/CA_lab8_Myrah_Romaisa/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs/CA_Labs.srcs/constrs_1/new/constrlab8.xdc"/>
+        <Attr Name="ImportTime" Val="1773653201"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

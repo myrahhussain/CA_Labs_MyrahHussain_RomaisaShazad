@@ -1,0 +1,30 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Time=0 rst=1 addr=00000000 we=0 re=0 wdata=00000000 rdata=xxxxxxxx leds=0000
+Time=5000 rst=1 addr=00000000 we=0 re=0 wdata=00000000 rdata=00000000 leds=0000
+Time=10000 rst=0 addr=00000000 we=0 re=0 wdata=00000000 rdata=00000000 leds=0000
+Time=13000 rst=0 addr=00000000 we=1 re=0 wdata=deadbeef rdata=00000000 leds=0000
+Time=15000 rst=0 addr=00000000 we=1 re=0 wdata=deadbeef rdata=deadbeef leds=0000
+Time=23000 rst=0 addr=00000000 we=0 re=0 wdata=deadbeef rdata=deadbeef leds=0000
+Time=26000 rst=0 addr=00000100 we=1 re=0 wdata=0000abcd rdata=00000000 leds=0000
+Time=35000 rst=0 addr=00000100 we=1 re=0 wdata=0000abcd rdata=00000000 leds=abcd
+Time=36000 rst=0 addr=00000100 we=0 re=0 wdata=0000abcd rdata=00000000 leds=abcd
+Time=39000 rst=0 addr=00000200 we=0 re=1 wdata=0000abcd rdata=00000000 leds=abcd
+Time=45000 rst=0 addr=00000200 we=0 re=1 wdata=0000abcd rdata=0000a5a5 leds=abcd
+Time=49000 rst=0 addr=00000200 we=0 re=0 wdata=0000abcd rdata=0000a5a5 leds=abcd
+Time=52000 rst=0 addr=00000200 we=0 re=1 wdata=0000abcd rdata=0000a5a5 leds=abcd
+Time=55000 rst=0 addr=00000200 we=0 re=1 wdata=0000abcd rdata=00001234 leds=abcd
+Time=62000 rst=0 addr=00000200 we=0 re=0 wdata=0000abcd rdata=00001234 leds=abcd
+Time=65000 rst=0 addr=00000000 we=0 re=1 wdata=0000abcd rdata=deadbeef leds=abcd
+Time=75000 rst=0 addr=00000000 we=0 re=0 wdata=0000abcd rdata=deadbeef leds=abcd
+Time=78000 rst=0 addr=00000010 we=1 re=0 wdata=ffffffff rdata=00000000 leds=abcd
+Time=85000 rst=0 addr=00000010 we=1 re=0 wdata=ffffffff rdata=ffffffff leds=abcd
+Time=88000 rst=0 addr=00000010 we=0 re=0 wdata=ffffffff rdata=ffffffff leds=abcd
+Time=91000 rst=1 addr=00000010 we=0 re=0 wdata=ffffffff rdata=ffffffff leds=0000
+Time=95000 rst=1 addr=00000010 we=0 re=0 wdata=ffffffff rdata=00000000 leds=0000
+Time=101000 rst=0 addr=00000010 we=0 re=0 wdata=ffffffff rdata=00000000 leds=0000
+Time=104000 rst=1 addr=00000010 we=1 re=0 wdata=ffffffff rdata=00000000 leds=0000
+Time=114000 rst=0 addr=00000010 we=0 re=0 wdata=ffffffff rdata=00000000 leds=0000
+Time=117000 rst=1 addr=00000100 we=1 re=0 wdata=ffffffff rdata=00000000 leds=0000
+Time=127000 rst=0 addr=00000100 we=0 re=0 wdata=ffffffff rdata=00000000 leds=0000
+$finish called at time : 177 ns : File "C:/Users/IBM/Desktop/lab08_myrahisamazing/lab08_myrahisamazing/lab08_myrahisamazing.srcs/sim_1/new/MemorySystem_tb.v" Line 77
