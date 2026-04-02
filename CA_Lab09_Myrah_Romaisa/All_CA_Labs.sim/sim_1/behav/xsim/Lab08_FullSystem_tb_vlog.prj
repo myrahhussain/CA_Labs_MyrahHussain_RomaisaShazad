@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CA_Labs.srcs/sources_1/new/AddressDecoder.v" \
+"../../../../CA_Labs.srcs/sources_1/new/AddressDecoderTop.v" \
+"../../../../CA_Labs.srcs/sources_1/new/DataMemory.v" \
+"../../../../CA_Labs.srcs/sources_1/new/Lab08_FSM.v" \
+"../../../../CA_Labs.srcs/sources_1/new/Lab08_top.v" \
+"../../../../CA_Labs.srcs/sim_1/new/MemorySystem_tb.v" \
+"../../../../CA_Labs.srcs/sources_1/new/debouncer.v" \
+"../../../../CA_Labs.srcs/sources_1/new/leds.v" \
+"../../../../CA_Labs.srcs/sources_1/new/switches.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

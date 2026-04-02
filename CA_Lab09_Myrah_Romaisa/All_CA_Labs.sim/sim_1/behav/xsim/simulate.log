@@ -1,0 +1,95 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+=== RISC-V Control Path Testbench ===
+-----------------------------------------------
+ Instruction :     ADD 
+ opcode=0110011  funct3=000  funct7=0000000
+ RegWrite=1 ALUSrc=0 MemRead=0 MemWrite=0 MemtoReg=0 Branch=0
+ ALUOp=10  ALUControl=0010
+  [PASS]
+-----------------------------------------------
+ Instruction :     SUB 
+ opcode=0110011  funct3=000  funct7=0100000
+ RegWrite=1 ALUSrc=0 MemRead=0 MemWrite=0 MemtoReg=0 Branch=0
+ ALUOp=10  ALUControl=0110
+  [PASS]
+-----------------------------------------------
+ Instruction :     SLL 
+ opcode=0110011  funct3=001  funct7=0000000
+ RegWrite=1 ALUSrc=0 MemRead=0 MemWrite=0 MemtoReg=0 Branch=0
+ ALUOp=10  ALUControl=0011
+  [PASS]
+-----------------------------------------------
+ Instruction :     SRL 
+ opcode=0110011  funct3=101  funct7=0000000
+ RegWrite=1 ALUSrc=0 MemRead=0 MemWrite=0 MemtoReg=0 Branch=0
+ ALUOp=10  ALUControl=0000
+  [PASS]
+-----------------------------------------------
+ Instruction :     AND 
+ opcode=0110011  funct3=111  funct7=0000000
+ RegWrite=1 ALUSrc=0 MemRead=0 MemWrite=0 MemtoReg=0 Branch=0
+ ALUOp=10  ALUControl=1000
+  [PASS]
+-----------------------------------------------
+ Instruction :     OR  
+ opcode=0110011  funct3=110  funct7=0000000
+ RegWrite=1 ALUSrc=0 MemRead=0 MemWrite=0 MemtoReg=0 Branch=0
+ ALUOp=10  ALUControl=0001
+  [PASS]
+-----------------------------------------------
+ Instruction :     XOR 
+ opcode=0110011  funct3=100  funct7=0000000
+ RegWrite=1 ALUSrc=0 MemRead=0 MemWrite=0 MemtoReg=0 Branch=0
+ ALUOp=10  ALUControl=0111
+  [PASS]
+-----------------------------------------------
+ Instruction :     ADDI
+ opcode=0010011  funct3=000  funct7=0000000
+ RegWrite=1 ALUSrc=1 MemRead=0 MemWrite=0 MemtoReg=0 Branch=0
+ ALUOp=11  ALUControl=0010
+  [PASS]
+-----------------------------------------------
+ Instruction :     LW  
+ opcode=0000011  funct3=010  funct7=0000000
+ RegWrite=1 ALUSrc=1 MemRead=1 MemWrite=0 MemtoReg=1 Branch=0
+ ALUOp=00  ALUControl=0010
+  [PASS]
+-----------------------------------------------
+ Instruction :     LH  
+ opcode=0000011  funct3=001  funct7=0000000
+ RegWrite=1 ALUSrc=1 MemRead=1 MemWrite=0 MemtoReg=1 Branch=0
+ ALUOp=00  ALUControl=0010
+  [PASS]
+-----------------------------------------------
+ Instruction :     LB  
+ opcode=0000011  funct3=000  funct7=0000000
+ RegWrite=1 ALUSrc=1 MemRead=1 MemWrite=0 MemtoReg=1 Branch=0
+ ALUOp=00  ALUControl=0010
+  [PASS]
+-----------------------------------------------
+ Instruction :     SW  
+ opcode=0100011  funct3=010  funct7=0000000
+ RegWrite=0 ALUSrc=1 MemRead=0 MemWrite=1 MemtoReg=0 Branch=0
+ ALUOp=00  ALUControl=0010
+  [PASS]
+-----------------------------------------------
+ Instruction :     SH  
+ opcode=0100011  funct3=001  funct7=0000000
+ RegWrite=0 ALUSrc=1 MemRead=0 MemWrite=1 MemtoReg=0 Branch=0
+ ALUOp=00  ALUControl=0010
+  [PASS]
+-----------------------------------------------
+ Instruction :     SB  
+ opcode=0100011  funct3=000  funct7=0000000
+ RegWrite=0 ALUSrc=1 MemRead=0 MemWrite=1 MemtoReg=0 Branch=0
+ ALUOp=00  ALUControl=0010
+  [PASS]
+-----------------------------------------------
+ Instruction :     BEQ 
+ opcode=1100011  funct3=000  funct7=0000000
+ RegWrite=0 ALUSrc=0 MemRead=0 MemWrite=0 MemtoReg=0 Branch=1
+ ALUOp=01  ALUControl=0110
+  [PASS]
+=== Testbench complete ===
+$finish called at time : 155 ns : File "C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sim_1/new/tb_lab09.v" Line 124
