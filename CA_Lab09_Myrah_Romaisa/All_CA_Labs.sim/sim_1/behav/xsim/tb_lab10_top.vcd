@@ -1,0 +1,248 @@
+$date
+   Sat Apr 11 12:00:51 2026
+$end
+$version
+  2020.1
+$end
+$timescale
+  1ps
+$end
+$scope module tb_lab10_top $end
+$var reg 1 ! clk $end
+$var reg 1 " rst_btn $end
+$var reg 16 # sw [15:0] $end
+$var wire 16 $ led [15:0] $end
+$scope module dut $end
+$var wire 1 % clk $end
+$var wire 1 & rst_btn $end
+$var wire 16 ' sw [15:0] $end
+$var wire 16 $ led [15:0] $end
+$var wire 1 ( rst $end
+$var wire 32 ) pc [31:0] $end
+$var wire 32 * instruction [31:0] $end
+$var wire 32 + memAddress [31:0] $end
+$var wire 32 , writeData [31:0] $end
+$var wire 32 - readData [31:0] $end
+$var wire 1 . writeEnable $end
+$var wire 1 / readEnable $end
+$var wire 1 0 cs_leds $end
+$var wire 1 1 cs_sw $end
+$var wire 1 2 cs_rst $end
+$var wire 32 3 leds_rdata [31:0] $end
+$var wire 32 4 sw_rdata [31:0] $end
+$var wire 32 5 rst_rdata [31:0] $end
+$scope module u_dbnc $end
+$var wire 1 % clk $end
+$var wire 1 & pbin $end
+$var reg 1 6 pbout $end
+$var reg 20 7 timer [19:0] $end
+$var reg 2 8 sync [1:0] $end
+$upscope $end
+$scope module u_imem $end
+$var wire 32 ) instAddress [31:0] $end
+$var reg 32 9 instruction [31:0] $end
+$var parameter 32 : OPERAND_LENGTH [31:0] $end
+$upscope $end
+$scope module u_cpu $end
+$var wire 1 % clk $end
+$var wire 1 ( rst $end
+$var wire 32 * instruction [31:0] $end
+$var wire 32 ) pc [31:0] $end
+$var wire 32 - readData [31:0] $end
+$var wire 32 , writeData [31:0] $end
+$var wire 32 + memAddress [31:0] $end
+$var wire 1 . writeEnable $end
+$var wire 1 / readEnable $end
+$var reg 32 ; PC_reg [31:0] $end
+$var integer 32 < i $end
+$var wire 7 = opcode [6:0] $end
+$var wire 5 > rd [4:0] $end
+$var wire 3 ? funct3 [2:0] $end
+$var wire 5 @ rs1 [4:0] $end
+$var wire 5 A rs2 [4:0] $end
+$var wire 7 B funct7 [6:0] $end
+$var wire 32 C imm_I [31:0] $end
+$var wire 32 D imm_S [31:0] $end
+$var wire 32 E imm_B [31:0] $end
+$var wire 32 F imm_U [31:0] $end
+$var wire 32 G imm_J [31:0] $end
+$var wire 32 H rs1_data [31:0] $end
+$var wire 32 I rs2_data [31:0] $end
+$var reg 32 J alu_result [31:0] $end
+$var wire 32 K alu_b [31:0] $end
+$var wire 1 L use_imm $end
+$var reg 1 M branch_taken $end
+$var wire 32 N pc_plus4 [31:0] $end
+$var wire 32 O pc_branch [31:0] $end
+$var wire 32 P pc_jal [31:0] $end
+$var wire 32 Q pc_jalr [31:0] $end
+$var wire 32 R next_pc [31:0] $end
+$var parameter 7 S OP_LUI [6:0] $end
+$var parameter 7 T OP_AUIPC [6:0] $end
+$var parameter 7 U OP_JAL [6:0] $end
+$var parameter 7 V OP_JALR [6:0] $end
+$var parameter 7 W OP_BRANCH [6:0] $end
+$var parameter 7 X OP_LOAD [6:0] $end
+$var parameter 7 Y OP_STORE [6:0] $end
+$var parameter 7 Z OP_IMM [6:0] $end
+$var parameter 7 [ OP_REG [6:0] $end
+$upscope $end
+$scope module u_leds $end
+$var wire 1 % clk $end
+$var wire 1 ( rst $end
+$var wire 32 , writeData [31:0] $end
+$var wire 1 \ writeEnable $end
+$var wire 1 ] readEnable $end
+$var wire 30 ^ memAddress [29:0] $end
+$var reg 32 _ readData [31:0] $end
+$var reg 16 ` leds [15:0] $end
+$upscope $end
+$scope module u_sw $end
+$var wire 1 % clk $end
+$var wire 1 ( rst $end
+$var wire 16 a btns [15:0] $end
+$var wire 32 b writeData [31:0] $end
+$var wire 1 c writeEnable $end
+$var wire 1 d readEnable $end
+$var wire 30 e memAddress [29:0] $end
+$var wire 16 ' switches [15:0] $end
+$var reg 32 f readData [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+b0 #
+bx $
+0%
+1&
+b0 '
+x(
+bx )
+bx *
+b0 +
+bx ,
+b0 -
+x.
+x/
+00
+01
+02
+b0 3
+bx 4
+b0x 5
+x6
+bx 7
+bx 8
+bx 9
+b11111 :
+bx ;
+b100000 <
+bx =
+bx >
+bx ?
+bx @
+bx A
+bx B
+bx C
+bx D
+bx0 E
+bx000000000000 F
+bx0 G
+bx H
+bx I
+b0 J
+bx K
+xL
+xM
+bx N
+bx O
+bx P
+bx0 Q
+bx R
+b110111 S
+b10111 T
+b1101111 U
+b1100111 V
+b1100011 W
+b11 X
+b100011 Y
+b10011 Z
+b110011 [
+0\
+0]
+b0 ^
+b0 _
+bx `
+b0 a
+b0 b
+0c
+0d
+b0 e
+bx f
+$end
+#50000
+1!
+1%
+bx1 8
+#100000
+0!
+0%
+#150000
+1!
+1%
+b11 8
+#200000
+0!
+0%
+#250000
+1!
+1%
+#300000
+0!
+0%
+#350000
+1!
+1%
+#400000
+0!
+0%
+#450000
+1!
+1%
+#500000
+0!
+0%
+#550000
+1!
+1%
+#600000
+0!
+0%
+#650000
+1!
+1%
+#700000
+0!
+0%
+#750000
+1!
+1%
+#800000
+0!
+0%
+#850000
+1!
+1%
+#900000
+0!
+0%
+#950000
+1!
+1%
+#1000000
+0!
+0%

@@ -1,74 +1,47 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 04/09/2026 11:39:51 AM
-// Design Name: 
-// Module Name: lab10_top
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-// ============================================================
-// lab10_top.v
-// Top-level module for Lab 10
-// Instantiates: processor, instructionMemory, switches,
-//               leds, debouncer
-// ============================================================
 `timescale 1ns/1ps
 
 module lab10_top (
-    input        clk,          // 10 MHz board clock
-    input        rst_btn,      // raw reset push-button
-    input  [15:0] sw,          // 16 slide switches
-    output [15:0] led          // 16 LEDs
+    input  wire        clk,
+    input  wire        rst_btn,
+    input  wire [15:0] sw,
+    output wire [15:0] led
 );
 
-    // ----------------------------------------------------------
-    // Debounced reset
-    // ----------------------------------------------------------
-    wire rst;
+    // Debouncer only matters on FPGA.
+    // In simulation, pbout stays X for 1M cycles.
+    // Solution: OR the raw button with debounced output
+    // so rst is asserted immediately when button pressed.
+    wire rst_debounced;
     debouncer u_dbnc (
         .clk   (clk),
         .pbin  (rst_btn),
-        .pbout (rst)
+        .pbout (rst_debounced)
+    );
+
+    // Use raw rst_btn directly - debouncer handles glitches on FPGA
+    // but for simulation correctness we need immediate response
+    wire rst = rst_btn | rst_debounced;
+
+    // ----------------------------------------------------------
+    // Processor <-> instruction memory
+    // ----------------------------------------------------------
+    wire [31:0] pc;
+    wire [31:0] instruction;
+
+    instructionMemory u_imem (
+        .instAddress (pc),
+        .instruction (instruction)
     );
 
     // ----------------------------------------------------------
-    // Processor ? memory-mapped bus signals
+    // Processor <-> data memory bus
     // ----------------------------------------------------------
-    wire [31:0] pc;           // program counter from processor
-    wire [31:0] instruction;  // fetched instruction
-
-    wire [31:0] memAddress_w; // 32-bit word address from processor
-    wire [29:0] memAddress;   // lower 30 bits (word-addressed)
+    wire [31:0] memAddress;
     wire [31:0] writeData;
     wire [31:0] readData;
     wire        writeEnable;
     wire        readEnable;
 
-    assign memAddress = memAddress_w[31:2];
-
-    // ----------------------------------------------------------
-    // Instruction Memory
-    // ----------------------------------------------------------
-    instructionMemory u_imem (
-        .instAddress (pc),          // byte-addressed PC
-        .instruction (instruction)
-    );
-
-    // ----------------------------------------------------------
-    // RISC-V Processor (single-cycle, from previous labs)
-    // ----------------------------------------------------------
     riscv_processor u_cpu (
         .clk         (clk),
         .rst         (rst),
@@ -76,35 +49,29 @@ module lab10_top (
         .pc          (pc),
         .readData    (readData),
         .writeData   (writeData),
-        .memAddress  (memAddress_w),
+        .memAddress  (memAddress),
         .writeEnable (writeEnable),
         .readEnable  (readEnable)
     );
 
     // ----------------------------------------------------------
-    // Address decode: chip-select signals
-    //   0xC0000000 >> 2 = 0x30000000 ? LEDs
-    //   0xC0000004 >> 2 = 0x30000001 ? Switches
-    //   0xC0000008 >> 2 = 0x30000002 ? Reset (read-only)
+    // Address decode
     // ----------------------------------------------------------
-    wire cs_leds    = (memAddress == 30'h30000000);
-    wire cs_sw      = (memAddress == 30'h30000001);
-    wire cs_rst_reg = (memAddress == 30'h30000002);
-
-    wire        leds_we   = writeEnable & cs_leds;
-    wire        sw_re     = readEnable  & cs_sw;
+    wire cs_leds = (memAddress == 32'hC0000000);
+    wire cs_sw   = (memAddress == 32'hC0000004);
+    wire cs_rst  = (memAddress == 32'hC0000008);
 
     // ----------------------------------------------------------
     // LEDs peripheral
     // ----------------------------------------------------------
-    wire [31:0] leds_rdata;   // not used (write-only)
+    wire [31:0] leds_rdata;
     leds u_leds (
         .clk         (clk),
         .rst         (rst),
         .writeData   (writeData),
-        .writeEnable (leds_we),
+        .writeEnable (writeEnable & cs_leds),
         .readEnable  (1'b0),
-        .memAddress  (memAddress),
+        .memAddress  (30'b0),
         .readData    (leds_rdata),
         .leds        (led)
     );
@@ -116,25 +83,25 @@ module lab10_top (
     switches u_sw (
         .clk         (clk),
         .rst         (rst),
-        .btns        (16'b0),       // unused in this lab
+        .btns        (16'b0),
         .writeData   (32'b0),
         .writeEnable (1'b0),
-        .readEnable  (sw_re),
-        .memAddress  (memAddress),
+        .readEnable  (readEnable & cs_sw),
+        .memAddress  (30'b0),
         .switches    (sw),
         .readData    (sw_rdata)
     );
 
     // ----------------------------------------------------------
-    // Reset register (read-only, returns debounced rst on bit 0)
+    // Reset register
     // ----------------------------------------------------------
     wire [31:0] rst_rdata = {31'b0, rst};
 
     // ----------------------------------------------------------
-    // Read data mux back to processor
+    // Read data mux
     // ----------------------------------------------------------
-    assign readData = cs_sw      ? sw_rdata  :
-                      cs_rst_reg ? rst_rdata :
-                                   32'b0;
+    assign readData = cs_sw  ? sw_rdata  :
+                      cs_rst ? rst_rdata :
+                               32'b0;
 
 endmodule
