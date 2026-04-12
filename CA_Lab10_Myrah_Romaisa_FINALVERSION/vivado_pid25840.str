@@ -1,0 +1,260 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 25840
+License: Customer
+
+Current time: 	Sun Apr 12 19:35:02 PKT 2026
+Time zone: 	Pakistan Standard Time (Asia/Karachi)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	E:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	E:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	IBM
+User home directory: C:/Users/IBM
+User working directory: C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: E:/Xilinx/Vivado
+HDI_APPROOT: E:/Xilinx/Vivado/2020.1
+RDI_DATADIR: E:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: E:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/IBM/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/IBM/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/IBM/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	E:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/vivado.log
+Vivado journal file location: 	C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/vivado.jou
+Engine tmp dir: 	C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/.Xil/Vivado-25840-DESKTOP-2HIMGAT
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: E:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: E:/Xilinx/Vivado/2020.1
+XILINX_VIVADO: E:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: E:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 840 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1692 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\IBM\Desktop\CA_Labs_MyrahHussain_RomaisaShazad\CA_Labs_MyrahHussain_RomaisaShazad\All_CA_Labs\All_CA_Labs.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs' 
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 54 MB. Current time: 4/12/26, 7:35:03 PM PKT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 122 MB (+125230kb) [00:00:39]
+// [Engine Memory]: 840 MB (+729401kb) [00:00:39]
+// WARNING: HEventQueue.dispatchEvent() is taking  12718 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1111 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.1/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  2316 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1058 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:01:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1026.840 ; gain = 0.000 
+// Project name: All_CA_Labs; location: C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz (cs)
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 134 MB (+6755kb) [00:01:14]
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1539 ms. Increasing delay to 4617 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  605526 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 75 MB. Current time: 4/12/26, 8:06:21 PM PKT
+// WARNING: HEventQueue.dispatchEvent() is taking  1876 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1919014 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2489 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 76 MB. Current time: 4/12/26, 8:43:12 PM PKT
+// WARNING: HEventQueue.dispatchEvent() is taking  2919 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 66 MB. Current time: 4/12/26, 9:13:13 PM PKT
+// WARNING: HEventQueue.dispatchEvent() is taking  891407 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1466739 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2352 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1571 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 66 MB. Current time: 4/12/26, 9:59:20 PM PKT
+// Elapsed time: 9985 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v)]", 1); // B (F, cs)
+// PAPropertyPanels.initPanels (MainControl.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v), u_main : MainControl (MainControl.v)]", 4, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v), u_main : MainControl (MainControl.v)]", 4, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v), u_alu : ALUControl (ALUControl.v)]", 5, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v), u_alu : ALUControl (ALUControl.v)]", 5, false, false, false, false, false, true); // B (F, cs) - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1662 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 70 MB. Current time: 4/12/26, 10:29:20 PM PKT
+// Elapsed time: 1271 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v), u_sw : switches (switches.v)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v), u_sw : switches (switches.v)]", 3, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("switches.v", 402, 202); // bP (w, cs)
+typeControlKey((HResource) null, "switches.v", 'c'); // bP (w, cs)
+// Elapsed time: 27 seconds
+typeControlKey((HResource) null, "switches.v", 'c'); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v), u_leds : leds (leds.v)]", 6, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v), u_leds : leds (leds.v)]", 6, false, false, false, false, false, true); // B (F, cs) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab8 (Lab08_top.v)]", 7); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab8 (Lab08_top.v), mem_sys : AddressDecoderTOP (AddressDecoderTop.v)]", 10, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab8 (Lab08_top.v), mem_sys : AddressDecoderTOP (AddressDecoderTop.v)]", 10, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("AddressDecoderTop.v", 16, 108); // bP (w, cs)
+typeControlKey((HResource) null, "AddressDecoderTop.v", 'c'); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v), u_leds : leds (leds.v)]", 6, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v), u_leds : leds (leds.v)]", 6, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("leds.v", 245, 232); // bP (w, cs)
+typeControlKey((HResource) null, "leds.v", 'c'); // bP (w, cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  1669 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 71 MB. Current time: 4/12/26, 10:59:23 PM PKT
+// Elapsed time: 1079 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v), u_main : MainControl (MainControl.v)]", 4, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v), u_main : MainControl (MainControl.v)]", 4, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("MainControl.v", 200, 180); // bP (w, cs)
+typeControlKey((HResource) null, "MainControl.v", 'c'); // bP (w, cs)
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v), u_alu : ALUControl (ALUControl.v)]", 5, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v), u_alu : ALUControl (ALUControl.v)]", 5, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("ALUControl.v", 254, 203); // bP (w, cs)
+typeControlKey((HResource) null, "ALUControl.v", 'c'); // bP (w, cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  2567 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 70 MB. Current time: 4/12/26, 11:29:28 PM PKT
+// Elapsed time: 2165 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+// Elapsed time: 18 seconds
+selectButton("NEXT", "Next >"); // JButton (j, c)
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+// 'h' command handler elapsed time: 34 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Elapsed time: 44 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 22 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "instructionMemory"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 28 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Tcl Message: close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/instructionMemory.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/instructionMemory.v 
+// I (cs): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (v, C)
+dismissDialog("Define Module"); // I (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, instructionMemory (instructionMemory.v)]", 16, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, instructionMemory (instructionMemory.v)]", 16, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("instructionMemory.v", 236, 219); // bP (w, cs)
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "instructionMemory.v", 'v'); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, instructionMemory (instructionMemory.v)]", 16, false, false, false, false, true, false); // B (F, cs) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top instructionMemory [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 18 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab09 (top_lab09.v)]", 1); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab8 (Lab08_top.v)]", 2); // B (F, cs)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "instruction.mem"); // ac (Q, F)
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "Memory File", 4); // cm (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 18 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Tcl Message: close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/instruction.mem w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/instruction.mem 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File]", 5, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File]", 5, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File, instruction.mem]", 6, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File, instruction.mem]", 6, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("instruction.mem", 486, 108); // bP (w, cs)
+selectCodeEditor("instruction.mem", 446, 86); // bP (w, cs)
+typeControlKey((HResource) null, "instruction.mem", 'v'); // bP (w, cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  2181 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 75 MB. Current time: 4/12/26, 11:59:31 PM PKT
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 74 MB. Current time: 4/13/26, 12:29:32 AM PKT
+// WARNING: HEventQueue.dispatchEvent() is taking  1066 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 73 MB. Current time: 4/13/26, 12:59:36 AM PKT

@@ -1,0 +1,14 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.sim/sim_1/behav/xsim/glbl.v,1774501624,verilog,,,,glbl,,,,,,,,
+C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sim_1/new/MemorySystem_tb.v,1774501624,verilog,,,,MemorySystem_tb,,,,,,,,
+C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sim_1/new/tb_lab09.v,1774506251,verilog,,,,tb_lab09,,,,,,,,
+C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/ALUControl.v,1774506052,verilog,,C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/MainControl.v,,ALUControl,,,,,,,,
+C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/AddressDecoder.v,1774501624,verilog,,C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/AddressDecoderTop.v,,AddressDecoder,,,,,,,,
+C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/AddressDecoderTop.v,1774501624,verilog,,C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/DataMemory.v,,AddressDecoderTOP,,,,,,,,
+C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/DataMemory.v,1774501624,verilog,,C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/leds.v,,DataMemory,,,,,,,,
+C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/MainControl.v,1774504986,verilog,,C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sim_1/new/tb_lab09.v,,MainControl,,,,,,,,
+C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/leds.v,1774501624,verilog,,C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/switches.v,,leds,,,,,,,,
+C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/switches.v,1774501624,verilog,,C:/Myrah Hussain/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sim_1/new/MemorySystem_tb.v,,switches,,,,,,,,

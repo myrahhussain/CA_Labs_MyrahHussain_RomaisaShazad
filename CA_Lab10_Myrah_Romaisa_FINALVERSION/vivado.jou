@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Apr 12 19:34:22 2026
+# Process ID: 25840
+# Current directory: C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25436 C:\Users\IBM\Desktop\CA_Labs_MyrahHussain_RomaisaShazad\CA_Labs_MyrahHussain_RomaisaShazad\All_CA_Labs\All_CA_Labs.xpr
+# Log file: C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/vivado.log
+# Journal file: C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/instructionMemory.v w ]
+add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/instructionMemory.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top instructionMemory [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/instruction.mem w ]
+add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/instruction.mem
