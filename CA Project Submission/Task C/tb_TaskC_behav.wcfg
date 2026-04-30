@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_TaskC_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_TaskC" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="32901fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="213"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/tb_TaskC/uut/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TaskC/uut/ALUResult" type="array">
+      <obj_property name="ElementShortName">ALUResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUResult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TaskC/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TaskC/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TaskC/sw_in" type="array">
+      <obj_property name="ElementShortName">sw_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TaskC/led_out" type="array">
+      <obj_property name="ElementShortName">led_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">led_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TaskC/cycle" type="array">
+      <obj_property name="ElementShortName">cycle[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cycle[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TaskC/prev_led" type="array">
+      <obj_property name="ElementShortName">prev_led[15:0]</obj_property>
+      <obj_property name="ObjectShortName">prev_led[15:0]</obj_property>
+   </wvobject>
+</wave_config>

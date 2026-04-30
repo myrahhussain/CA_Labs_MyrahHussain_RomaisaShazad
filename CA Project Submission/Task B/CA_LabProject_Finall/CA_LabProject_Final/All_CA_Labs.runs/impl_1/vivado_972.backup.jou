@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Apr 29 20:52:05 2026
+# Process ID: 972
+# Current directory: C:/Users/H.H/Desktop/CA_LabProject_Finall/CA_LabProject_Final/All_CA_Labs.runs/impl_1
+# Command line: vivado.exe -log FpgaTop.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source FpgaTop.tcl -notrace
+# Log file: C:/Users/H.H/Desktop/CA_LabProject_Finall/CA_LabProject_Final/All_CA_Labs.runs/impl_1/FpgaTop.vdi
+# Journal file: C:/Users/H.H/Desktop/CA_LabProject_Finall/CA_LabProject_Final/All_CA_Labs.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source FpgaTop.tcl -notrace

@@ -1,0 +1,170 @@
+$date
+   Mon Apr 13 02:10:50 2026
+$end
+$version
+  2020.1
+$end
+$timescale
+  1ps
+$end
+$scope module tb_lab11_task1 $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 1 # PCSrc $end
+$var reg 32 $ instruction [31:0] $end
+$var wire 32 % PC [31:0] $end
+$var wire 32 & PCplus4 [31:0] $end
+$var wire 32 ' branchTarget [31:0] $end
+$var wire 32 ( nextPC [31:0] $end
+$var wire 32 ) imm [31:0] $end
+$scope module u_pc $end
+$var wire 1 * clk $end
+$var wire 1 + rst $end
+$var wire 32 ( nextPC [31:0] $end
+$var reg 32 , PC [31:0] $end
+$upscope $end
+$scope module u_pca $end
+$var wire 32 % PC [31:0] $end
+$var wire 32 & PCplus4 [31:0] $end
+$upscope $end
+$scope module u_imm $end
+$var wire 32 - instruction [31:0] $end
+$var reg 32 . imm [31:0] $end
+$var wire 7 / opcode [6:0] $end
+$upscope $end
+$scope module u_ba $end
+$var wire 32 % PC [31:0] $end
+$var wire 32 ) imm [31:0] $end
+$var wire 32 ' branchTarget [31:0] $end
+$upscope $end
+$scope module u_mux $end
+$var wire 32 & in0 [31:0] $end
+$var wire 32 ' in1 [31:0] $end
+$var wire 1 0 sel $end
+$var wire 32 ( out [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+b0 $
+b0 %
+b100 &
+b0 '
+b100 (
+b0 )
+0*
+1+
+b0 ,
+b0 -
+b0 .
+b0 /
+00
+$end
+#5000
+1!
+1*
+#6000
+0"
+0+
+#10000
+0!
+0*
+#15000
+1!
+b100 %
+b1000 &
+b100 '
+b1000 (
+1*
+b100 ,
+#20000
+0!
+0*
+#25000
+1!
+b1000 %
+b1100 &
+b1000 '
+b1100 (
+1*
+b1000 ,
+#30000
+0!
+0*
+#35000
+1!
+b1100 %
+b10000 &
+b1100 '
+b10000 (
+1*
+b1100 ,
+#40000
+0!
+0*
+#45000
+1!
+b10100000000000010010011 $
+b10000 %
+b10100 &
+b11010 '
+b10100 (
+b101 )
+1*
+b10000 ,
+b10100000000000010010011 -
+b101 .
+b10011 /
+#46000
+b11111111110100000000000010010011 $
+b1010 '
+b11111111111111111111111111111101 )
+b11111111110100000000000010010011 -
+b11111111111111111111111111111101 .
+#47000
+b100010010010000100011 $
+b100000 '
+b1000 )
+b100010010010000100011 -
+b1000 .
+b100011 /
+#48000
+b10000000000000000001100011 $
+b1010000 '
+b100000 )
+b10000000000000000001100011 -
+b100000 .
+b1100011 /
+#49000
+1"
+b0 %
+b100 &
+b1000000 '
+b100 (
+1+
+b0 ,
+#50000
+0!
+0*
+#55000
+1!
+1*
+#56000
+0"
+b100000000000000101001100011 $
+b10101000 '
+b1010100 )
+0+
+b100000000000000101001100011 -
+b1010100 .
+#58000
+1#
+b10101000 (
+10
+#60000
+0!
+0*

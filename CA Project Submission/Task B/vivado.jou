@@ -1,0 +1,130 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Apr 12 19:34:22 2026
+# Process ID: 25840
+# Current directory: C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25436 C:\Users\IBM\Desktop\CA_Labs_MyrahHussain_RomaisaShazad\CA_Labs_MyrahHussain_RomaisaShazad\All_CA_Labs\All_CA_Labs.xpr
+# Log file: C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/vivado.log
+# Journal file: C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/instructionMemory.v w ]
+add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/instructionMemory.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top instructionMemory [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/instruction.mem w ]
+add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/instruction.mem
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/ProgramCounter.v w ]
+add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/ProgramCounter.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/pcAdder.v w ]
+add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/pcAdder.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/branchAdder.v w ]
+add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/branchAdder.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/mux2.v w ]
+add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/mux2.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/immGen.v w ]
+add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/immGen.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/tb_lab11_task1.v w ]
+add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/tb_lab11_task1.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/tb_lab11_task1.v] -no_script -reset -force -quiet
+remove_files  C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/tb_lab11_task1.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sim_1/new/tb_lab11_task1.v w ]
+add_files -fileset sim_1 C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sim_1/new/tb_lab11_task1.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_lab11_task1 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+set_property is_enabled false [get_files  C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/instructionMemory.v]
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+exec notepad C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_Romaisa
+launch_simulation
+source tb_lab11_task1.tcl
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/TopLevelProcessor.v w ]
+add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/TopLevelProcessor.v
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/RegisterFile.v w ]
+add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/RegisterFile.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DataMemory [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TopLevelProcessor [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property is_enabled false [get_files  C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/DataMemory.v]
+set_property is_enabled true [get_files  C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/DataMemory.v]
+set_property is_enabled true [get_files  C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/instructionMemory.v]
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/ALU.v w ]
+add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/ALU.v
+close [ open C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/ALU_1bit.v w ]
+add_files C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/sources_1/new/ALU_1bit.v
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_design
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+synth_design -rtl -name rtl_1
+write_schematic C:/Users/IBM/Downloads/schematiclab11.sch
+close_design
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+set_property is_enabled false [get_files  C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/constrs_1/new/top_lab09.xdc]
+set_property is_enabled false [get_files  C:/Users/IBM/Desktop/CA_Labs_MyrahHussain_RomaisaShazad/CA_Labs_MyrahHussain_RomaisaShazad/All_CA_Labs/All_CA_Labs.srcs/constrs_1/new/constrlab8.xdc]
+add_files -fileset constrs_1 -norecurse C:/Users/IBM/Downloads/lab11_basys3.xdc
+import_files -fileset constrs_1 C:/Users/IBM/Downloads/lab11_basys3.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1

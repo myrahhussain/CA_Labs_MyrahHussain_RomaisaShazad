@@ -1,0 +1,56 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+WARNING: File programB.hex referenced on C:/Users/IBM/Desktop/taskb_CA_LabProject_Final/taskb_CA_LabProject_Final/All_CA_Labs.srcs/sources_1/new/instructionMemory.v at line 10 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+Instruction load check:
+  [0] = 08000113 (expect 08000113)
+  [1] = 00000413 (expect 00000413 - x8=0)
+  [4] = 0004a503 (expect 0004a503 - LW)
+=== Task B Simulation ===
+Test 1: sw=0, expect LED=0 (IDLE)
+t=105000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=125000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=145000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=165000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=185000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=205000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=225000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=245000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=265000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=285000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+LED = 0 (expect 0)
+
+Test 2: sw=4 (< 8) BGE NOT taken, DOUBLE, expect LED=8
+t=305000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=325000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=335000 BGE  executing | PC=00000018 | LessThan=1 | Branch taken=0
+t=345000 JAL  executing | PC=0000001c | instr=018000ef
+t=405000 JALR executing | PC=00000048 | instr=00008067
+t=415000 BGE  executing | PC=00000020 | LessThan=0 | Branch taken=1
+t=435000 BGE  executing | PC=00000030 | LessThan=0 | Branch taken=1
+t=455000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=465000 BGE  executing | PC=00000018 | LessThan=1 | Branch taken=0
+t=475000 JAL  executing | PC=0000001c | instr=018000ef
+t=535000 JALR executing | PC=00000048 | instr=00008067
+t=545000 BGE  executing | PC=00000020 | LessThan=0 | Branch taken=1
+t=565000 BGE  executing | PC=00000030 | LessThan=0 | Branch taken=1
+t=585000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=595000 BGE  executing | PC=00000018 | LessThan=1 | Branch taken=0
+t=605000 JAL  executing | PC=0000001c | instr=018000ef
+t=665000 JALR executing | PC=00000048 | instr=00008067
+t=675000 BGE  executing | PC=00000020 | LessThan=0 | Branch taken=1
+t=695000 BGE  executing | PC=00000030 | LessThan=0 | Branch taken=1
+t=715000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=725000 BGE  executing | PC=00000018 | LessThan=1 | Branch taken=0
+t=735000 JAL  executing | PC=0000001c | instr=018000ef
+t=795000 JALR executing | PC=00000048 | instr=00008067
+t=805000 BGE  executing | PC=00000020 | LessThan=0 | Branch taken=1
+t=825000 BGE  executing | PC=00000030 | LessThan=0 | Branch taken=1
+t=845000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=865000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=885000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=905000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=925000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=945000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=965000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+t=985000 BGE  executing | PC=00000014 | LessThan=0 | Branch taken=1
+LED = 8 (expect 8)
